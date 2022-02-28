@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+
+    >
+
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:contentDescription="@string/Prev_image"
+        android:padding="1dp"
+        android:scaleType="centerCrop" >
+
+        </ja.burhanrashid52.photoeditor.PhotoEditorView>
+
+    <HorizontalScrollView
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_filters_list"
+                android:padding="16dp"
+                app:cardBackgroundColor="@color/card_background_color"
+                app:cardElevation="8dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                >
+                <LinearLayout
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_image_white_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Filters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_effects"
+                android:padding="16dp"
+                app:cardBackgroundColor="@color/card_background_color"
+                app:cardElevation="8dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                >
+                <LinearLayout
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_effects_white_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Effects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_edits"
+                android:padding="16dp"
+                app:cardBackgroundColor="@color/card_background_color"
+                app:cardElevation="8dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                >
+                <LinearLayout
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_crop_white_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Edits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
