@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        android:title="Camera"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_open"
+        android:orderInCategory="99"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="Open"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="101"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_save_alt_24"
+        android:title="Save"
+        app:showAsAction="always" />
+
+
+
+</menu>
