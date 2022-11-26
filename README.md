@@ -4,7 +4,7 @@
 Developed a Photo Editor with Java as a final project for my Software Design course. I have decided to also share a PowerPoint containing a demo and further details of the application.
 
 ## Illustrations
-Review the Android Studio Photo Editor Experience- Josue Flores.pptx file.
+Review the Android Studio Photo Editor Experience-Josue Flores.pdf file.
 
 ## Scope of Functionality
 As aforementioned within the Project Overview, this project is a photo editor that allows the user to edit any image file within their gallery or any photo they take within the application. Once you open the application, you are prompted into your gallery to select an image to edit. Once selected, you are provided an interface that allows you to apply filters, effects,
